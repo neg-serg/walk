@@ -23,7 +23,7 @@
             subPackages = [ "." ];
             meta = with lib; {
               description = "walk - TUI file navigator";
-              homepage = "https://github.com/neg/walk";
+              homepage = "https://github.com/antonmedv/walk";
               license = licenses.mit;
               mainProgram = "walk";
               platforms = platforms.linux ++ platforms.darwin;
