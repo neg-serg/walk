@@ -13,6 +13,14 @@ Run `lk`, navigate using arrows or hjkl. Press, `esc` to jump to a new location;
 ## Install
 
 ```
+nix profile install nixpkgs#walk
+```
+
+```
+nix run nixpkgs#walk
+```
+
+```
 brew install walk
 ```
 
@@ -29,6 +37,21 @@ curl https://raw.githubusercontent.com/antonmedv/walk/master/install.sh | sh
 ```
 
 Or download [prebuild binaries](https://github.com/antonmedv/walk/releases).
+
+### Nix (from source)
+
+From this repository’s flake:
+
+```
+nix run .#walk
+```
+
+Build the binary or enter the dev shell:
+
+```
+nix build .#walk
+nix develop
+```
 
 ### Setup
 
